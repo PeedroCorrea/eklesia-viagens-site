@@ -1461,6 +1461,54 @@
       object-fit: contain;
     }
 
+    .footer-details {
+      display: grid;
+      gap: 8px;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .footer-details strong {
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .footer-details address {
+      font-style: normal;
+    }
+
+    .footer-details a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-details a:hover {
+      color: var(--blue-deep);
+    }
+
+    .footer-details a:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .footer-contacts {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 6px;
+      margin: 4px 0;
+    }
+
+    .footer-copyright {
+      margin-top: 12px;
+      font-size: 11px;
+    }
+
     .whatsapp {
       position: fixed;
       z-index: 120;
@@ -2608,10 +2656,18 @@
         <img src="images/logo-eklesia-sem-fundo.png" alt="Logo Eklesia Viagens">
       </a>
 
-      <strong style="color: var(--blue);">Eklesia Viagens</strong><br>
-      Você aproveita a viagem, a Eklesia cuida do resto.<br>
-      WhatsApp: (48) 99682-3161 · Instagram: @eklesiaviagens<br>
-      © 2026. Todos os direitos reservados.
+      <div class="footer-details">
+        <p><strong>Eklesia Viagens</strong><br>Você aproveita a viagem, a Eklesia cuida do resto.</p>
+        <p>Razão social: EKLESIA VIAGENS LTDA<br>Cadastro Nacional da Pessoa Jurídica (CNPJ): 49.807.030/0001-01</p>
+        <address>Rua Bom Jesus, 212, sala 1904, andar 19, Cond. AR 3000 - Cabral Cor<br>Juvevê, Curitiba - PR · CEP 80035-010</address>
+        <div class="footer-contacts">
+          <a href="https://wa.me/5548996823161" target="_blank" rel="noopener noreferrer">WhatsApp: (48) 99682-3161</a>
+          <a href="https://www.instagram.com/eklesiaviagens/" target="_blank" rel="noopener noreferrer">Instagram: @eklesiaviagens</a>
+        </div>
+        <p>E-mail: <a href="mailto:contato.eklesiaviagens@gmail.com">contato.eklesiaviagens@gmail.com</a></p>
+        <p><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+        <p class="footer-copyright">© 2026 Eklesia Viagens. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
 
